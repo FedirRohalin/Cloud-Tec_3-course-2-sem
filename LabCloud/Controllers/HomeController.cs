@@ -28,5 +28,12 @@ namespace LabCloud.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        public IActionResult TriggerError()
+        {
+            // Цей рядок навмисно викидає виключення (Exception), 
+            // що призведе до помилки 500 Internal Server Error
+            throw new Exception("This is a test failure for Application Insights.");
+        }
     }
+
 }
