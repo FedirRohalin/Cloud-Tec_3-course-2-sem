@@ -2,7 +2,6 @@
 # Данный GITIGNORE-файл был автоматически создан Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs
-/LabCloud/bin/Debug/net8.0
-/LabCloud/LabCloud.csproj
-/LabCloud/obj/Debug/net8.0/ref/LabCloud.dll
+.vs/
+obj/
+bin/
