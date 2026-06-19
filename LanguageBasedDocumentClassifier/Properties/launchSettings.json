@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "LanguageBasedDocumentClassifier": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7173",
+      "launchBrowser": false
+    }
+  }
+}
