@@ -1,6 +1,7 @@
-using LabCloud.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using LabCloud.Models; 
 
 namespace LabCloud.Controllers
 {
@@ -13,11 +14,14 @@ namespace LabCloud.Controllers
             _logger = logger;
         }
 
+        // Ця сторінка відкрита для всіх
         public IActionResult Index()
         {
             return View();
         }
 
+        // Ця сторінка ЗАХИЩЕНА. Доступ лише після авторизації
+        [Authorize]
         public IActionResult Privacy()
         {
             return View();
@@ -28,12 +32,5 @@ namespace LabCloud.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-        public IActionResult TriggerError()
-        {
-            // Цей рядок навмисно викидає виключення (Exception), 
-            // що призведе до помилки 500 Internal Server Error
-            throw new Exception("This is a test failure for Application Insights.");
-        }
     }
-
 }
