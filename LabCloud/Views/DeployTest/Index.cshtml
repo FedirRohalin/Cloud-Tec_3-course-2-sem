@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Статус розгортання";
+}
+
+<div class="text-center mt-5">
+    <h1 class="display-4 text-success">Готово до розгортання!</h1>
+    <p class="lead">Цей застосунок налаштовано для публікації в <b>Azure App Service</b>.</p>
+</div>
+
+<div class="card mx-auto mt-4" style="max-width: 500px;">
+    <div class="card-header bg-primary text-white">
+        Системна інформація
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><b>Середовище:</b> @ViewBag.EnvironmentInfo</li>
+        <li class="list-group-item"><b>Версія збірки:</b> @ViewBag.AppVersion</li>
+        <li class="list-group-item"><b>Статус:</b> <span class="badge bg-success">@ViewBag.Status</span></li>
+    </ul>
+</div>
