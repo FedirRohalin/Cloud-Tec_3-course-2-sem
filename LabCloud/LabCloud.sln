@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityLinkingConsole", "..\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EduEntityLinkerUI", "..\EduEntityLinkerUI\EduEntityLinkerUI.csproj", "{EE70F6B2-EA6C-4EDF-9504-C358D59F004A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthPiiConsole", "..\HealthPiiConsole\HealthPiiConsole.csproj", "{5DC6E499-10D0-4E9F-8038-9BA3C0188DD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicalAnonymizerUI", "..\MedicalAnonymizerUI\MedicalAnonymizerUI.csproj", "{91338969-C249-4005-AFBD-5936B93519B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{EE70F6B2-EA6C-4EDF-9504-C358D59F004A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE70F6B2-EA6C-4EDF-9504-C358D59F004A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE70F6B2-EA6C-4EDF-9504-C358D59F004A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DC6E499-10D0-4E9F-8038-9BA3C0188DD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DC6E499-10D0-4E9F-8038-9BA3C0188DD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DC6E499-10D0-4E9F-8038-9BA3C0188DD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DC6E499-10D0-4E9F-8038-9BA3C0188DD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91338969-C249-4005-AFBD-5936B93519B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91338969-C249-4005-AFBD-5936B93519B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91338969-C249-4005-AFBD-5936B93519B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91338969-C249-4005-AFBD-5936B93519B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
