@@ -1,6 +1,7 @@
-using LabCloud.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using LabCloud.Models; 
 
 namespace LabCloud.Controllers
 {
@@ -13,11 +14,14 @@ namespace LabCloud.Controllers
             _logger = logger;
         }
 
+        // Ця сторінка відкрита для всіх
         public IActionResult Index()
         {
             return View();
         }
 
+        // Ця сторінка ЗАХИЩЕНА. Доступ лише після авторизації
+        [Authorize]
         public IActionResult Privacy()
         {
             return View();
