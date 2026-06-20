@@ -26,7 +26,6 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
-// ВАЖЛИВО: Authentication має бути строго ПЕРЕД Authorization
 app.UseAuthentication();
 app.UseAuthorization();
 
